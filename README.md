@@ -1,2 +1,1 @@
-로그인 구현
-파일 녹화 구현
+https://youtubeclone.fly.dev/
