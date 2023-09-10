@@ -1,0 +1,18 @@
+extends base
+include mixins/video
+
+block content 
+    form(method="GET")
+        input(type="text", name="keyword", placeholder="Search by Title", required)
+        input(type="submit", value="search") 
+    
+    br
+    br
+
+    div 
+        ul 
+            each video in videos
+                li
+                    +video(video)
+            else
+                span No video found

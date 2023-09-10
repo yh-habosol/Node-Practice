@@ -1,0 +1,19 @@
+@import "./config/reset.scss";
+
+@import "./components/header.scss";
+@import "./components/videoController.scss";
+@import "./components/search-bar.scss";
+
+
+@import "./screens/home.scss";
+@import "./screens/join.scss";
+@import "./screens/login.scss";
+@import "./screens/editUser.scss";
+@import "./screens//editVideo.scss";
+@import "./screens/change-password.scss";
+@import "./screens/upload.scss";
+@import "./screens//profile.scss";
+
+body{
+    background-color: #0e1117;
+}

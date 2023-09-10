@@ -1,0 +1,29 @@
+header.header
+    
+
+
+    form(method="GET").header-search.search-form
+        a(href="/").home-link
+            i.fas.fa-play
+        nav.main-nav
+            ul.main-nav-list
+                if !loggedIn
+                    li
+                        a(href="/join") Join
+                    li
+                        a(href="/login") Login
+                else 
+                    li 
+                        a(href="/users/logout") logout
+                    li 
+                        a(href=`/users/${loggedInUser._id}`)
+                            img(src=loggedInUser.avatarUrl).main-user-image
+                        
+                    li
+                        a(href="/videos/upload") 
+                            i.fas.fa-video
+    
+
+    
+        
+                        

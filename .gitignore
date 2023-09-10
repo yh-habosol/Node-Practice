@@ -1,0 +1,10 @@
+/node_modules
+/.env
+/uploads
+/assets
+/build
+/Dockerfile
+/fly.toml
+/webpack.config.js
+/package-lock.json
+/.dockerignore

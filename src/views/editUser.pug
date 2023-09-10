@@ -1,0 +1,17 @@
+extends base
+
+block content
+    
+    img(src=loggedInUser.avatarUrl,width="100px", height="100px")#user-image
+    form(method="POST", enctype="multipart/form-data")#edit-user
+        if errorMessage
+            span.edit-user-error=errorMessage
+        label(for="avatar") Avatar
+        input(type="file", id="avatar", name="avatar", accept="image/*") 
+        input(type="text", placeholder="write a name", name="name", required, value=loggedInUser.name)
+        input(type="text", placeholder="write a username", name="username", required, value=loggedInUser.username)
+        input(type="email", placeholder="write a email", name="email", required, value=loggedInUser.email)
+        input(type="submit", value="Update profile").submit-button
+        
+        div#edit-password
+            a(href="change-password") Change Password &rarr; 

@@ -1,0 +1,43 @@
+#edit-user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    position: relative;
+
+}
+
+#user-image{
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+
+#edit-user input{
+    width: 70%;
+    border-radius: 40px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#edit-password{
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.edit-user-error{
+    position: absolute;
+    color: red;
+    left: 100px;
+}
+
+#edit-password a:link,
+#edit-password a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+#edit-user label{
+    color: white;
+}
+

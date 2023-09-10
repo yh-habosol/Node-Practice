@@ -1,0 +1,17 @@
+extends base
+
+block content
+    //- div 
+    //-     video#preView
+    //-     button#startBtn Start Recording
+    span.upload-title Upload Video
+    form(method="POST",enctype="multipart/form-data")#upload
+        label(for="video") Video File
+        input(type="file", accept="video/*", name="video", id="video", required) 
+        input(type="text", name="title", placeholder="write a title", required)
+        input(type="text", name="description", placeholder="write a description", required)
+        input(type="text", name="hashtags", placeholder="write a hashtags seperated by comma")
+        input(type="submit", value="Upload").submit-button
+block scripts
+    //- script(src="/static/js/recorder.js")
+        

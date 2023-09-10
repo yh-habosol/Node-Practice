@@ -1,0 +1,178 @@
+.main-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#videoContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#videoContainer video{
+    width: 70%;
+    height: 18%;
+    border-radius: 10px;
+}
+
+#videoControllerBox{
+    display: none;
+}
+
+#videoController, .time, .fullScreen{
+    position: absolute;
+}
+#videoController{
+    left: 30px;
+    bottom: 20px;
+}
+
+.fa-play, .fa-pause{
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.fa-volume-up, .fa-volume-mute{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.fullScreen{
+    right: 20px;
+    bottom: 20px;
+    font-size: 20px;
+}
+
+#timeNum{
+    position: absolute;
+    bottom: -7px;
+    display: flex;
+    left: 220px;
+}
+.time{
+    width: 100%;
+}
+.time input{
+    position: absolute;
+    top:-40px;
+    left: -32px;
+    width: 100%;
+}
+
+#videoControllerBox.showing{
+    display: flex;
+    position: absolute;
+    bottom: -1px;
+    padding: 30px;
+    background-color: rgb(106, 97, 97);
+    width: 66%;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+
+
+#video-info{
+    margin-top: 20px;    
+    color: white;
+    margin-left: 240px;
+
+}
+
+#video-title{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#video-author{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(139, 133, 133);
+    margin-bottom: 10px;
+}
+#video-views{
+    font-size: 14px;
+    margin-bottom: 40px;
+    color: rgb(139, 133, 133)
+}
+
+#video-edit{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#edit-link{
+    text-decoration: none;
+}
+#edit-link:link,
+#edit-link:visited{
+    color: rgb(139, 133, 133);
+}
+
+
+
+hr{
+    width: 70%;
+    height: 1px;
+    background-color: white;
+}
+
+#video-comments{
+    color: white;
+    margin-left: 240px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#commentForm{
+    margin-left: 240px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+
+}
+
+#commentForm a {
+    margin-right: 20px;
+}
+
+textarea{
+    background-color: transparent;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid rgb(116, 113, 113);
+    color: white;
+    width: 50%;
+    margin-right: 20px;
+}
+
+#add-comment{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+#commentList{
+    margin-left: 240px;
+    color: white;
+    margin-bottom: 200px;
+    margin-top: 40px;
+}
+
+#commentList li {
+    margin-bottom: 20px;
+}
+
+.deleteBtn{
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}

@@ -1,0 +1,16 @@
+extends base2
+
+block content
+    span#login-title Login
+    
+    form(method="POST")#login
+        if errorMessage
+            span#login-error=errorMessage
+        input(type="text", name="username", placeholder="write a username", required)
+        input(type="password", name="password", placeholder="write a password", required)
+        input(type="submit", value="Log In").submit-button
+    div#login-social
+        include partials/social-login
+
+    div#login-link
+        a(href="/join").login-to-join Don't you have Account? &rarr; 

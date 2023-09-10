@@ -1,0 +1,67 @@
+.main2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#join-title{
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#join{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-bottom: 30px;
+    position: relative;
+    
+}
+
+
+#join input{
+    padding: 20px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+
+}
+
+#join-social{
+    margin-bottom: 10px;
+}
+#join-link{
+    margin-bottom: 50px;
+}
+
+#join-error{
+    color: red;
+    margin-top: 10px;
+    text-align: start;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+}
+
+.submit-button{
+    background-color: #1A1A1A;
+    color: white;
+}
+
+#join-social,
+#join-link{
+    color: white;
+}
+
+.social__btn.social__btn--github:link,
+.join-to-login:link{
+    color: white;
+    text-decoration: none;
+}
+
+.social__btn.social__btn--github:visited,
+.join-to-login:visited{
+    color: white;
+    text-decoration: none;
+}

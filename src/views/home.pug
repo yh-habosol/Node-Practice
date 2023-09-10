@@ -1,0 +1,43 @@
+extends base
+include mixins/video
+
+block content
+    if !isSearch 
+        div.video-list-title
+            span Latest Video
+        div.home-video
+            ul.home-video-list
+                each video in videos
+                    li 
+                        +video(video)
+                else
+                    span No videos found
+        span#scroll-left 
+            i.fas.fa-chevron-left
+        span#scroll-right 
+            i.fas.fa-chevron-right
+
+
+        div.video-list-title
+            span Recommend Video
+        div.home-video
+            ul.home-video-list2
+                each video in videos
+                    li 
+                        +video(video)
+                else
+                    span No videos found
+        span.scroll-left2 
+            i.fas.fa-chevron-left
+        span.scroll-right2
+            i.fas.fa-chevron-right
+    else 
+        div
+            ul
+                each video in videos
+                    li 
+                        +video(video)
+                else
+                    span No videos found
+block scripts 
+    script(src="/static/js/videoList.js")

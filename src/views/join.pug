@@ -1,0 +1,20 @@
+extends base2
+
+block content
+    span#join-title Join
+
+    
+    form(method="POST")#join
+        if errorMessage
+            span#join-error=errorMessage
+        input(type="text", placeholder="write a name", name="name", required)
+        input(type="text", placeholder="write a username", name="username", required)
+        input(type="email", placeholder="write a email", name="email", required)
+        input(type="password", placeholder="write a password", name="password", required)
+        input(type="password", placeholder="comfirm password", name="password2", required)
+        input(type="submit", value="Join").submit-button
+    div#join-social
+        include partials/social-login
+    div#join-link
+        a(href="/login").join-to-login Already have accounts? &rarr; 
+        

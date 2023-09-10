@@ -1,0 +1,39 @@
+header.header
+    
+
+
+    form(method="GET").header-search.search-form
+        div.input-group
+            div.input-group2
+                label(for="")
+                    input(type="text", name="keyword", placeholder="Search by Title", required).search-field 
+                    input(type="submit", value="search").restore-domain-search-button.search-submit.btn.btn-primary
+        
+        a(href="/").home-link
+            i.fas.fa-play
+        nav.main-nav
+            ul.main-nav-list
+                if !loggedIn
+                    li
+                        a(href="/join") Join
+                    li
+                        a(href="/login") Login
+                else 
+                    li 
+                        a(href="/users/logout") logout
+                    li 
+                        a(href=`/users/${loggedInUser._id}`)
+                            if loggedInUser.avatarUrl === "https://cdn-icons-png.flaticon.com/512/149/149071.png"
+                                img(src=loggedInUser.avatarUrl).main-user-image
+                            else
+                                img(src=loggedInUser.avatarUrl).main-user-image
+
+                        
+                    li
+                        a(href="/videos/upload") 
+                            i.fas.fa-video
+    
+
+    
+        
+                        

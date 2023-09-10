@@ -1,0 +1,55 @@
+.header{
+    padding: 50px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+
+.header-search{
+    text-align: center;
+    position: relative;
+
+}
+
+.home-link{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.main-nav{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+
+.home-link i{
+    font-size: 30px;
+    color: red;
+}
+
+
+
+.main-nav-list{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.main-nav-list li{
+    margin-left: 30px;
+}
+
+
+.main-user-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.fa-video{
+    font-size: 20px;
+    color: white;
+}

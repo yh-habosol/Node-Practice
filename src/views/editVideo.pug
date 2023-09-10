@@ -1,0 +1,11 @@
+extends base
+
+block content
+    span.edit-video-title Edit Video
+    form(method="POST")#edit-video
+        input(type="text", name="title", placeholder="write a title", required, value=video.title)
+        input(type="text", name="description", placeholder="write a description", required, value=video.description)
+        input(type="text", name="hashtags", placeholder="write a hashtags seperated by comma", value=video.hashtags.join())
+        input(type="submit", value="Update video").submit-button
+    div#delete-video
+        a(href=`/videos/${video._id}/delete`) Delete video &rarr;

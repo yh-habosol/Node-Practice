@@ -1,0 +1,62 @@
+
+#login-title{
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#login{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-bottom: 30px;
+    position: relative;
+    
+}
+
+
+#login input{
+    padding: 20px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+
+}
+
+#login-social{
+    margin-bottom: 10px;
+}
+#login-link{
+    margin-bottom: 50px;
+}
+
+#login-error{
+    color: red;
+    margin-top: 10px;
+    text-align: start;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+}
+
+.submit-button{
+    background-color: #1A1A1A;
+    color: white;
+}
+
+#login-social,
+#login-link{
+    color: white;
+}
+
+.social__btn.social__btn--github:link,
+.login-to-join:link{
+    color: white;
+    text-decoration: none;
+}
+
+.social__btn.social__btn--github:visited,
+.login-to-join:visited{
+    color: white;
+    text-decoration: none;
+}

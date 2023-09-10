@@ -1,0 +1,20 @@
+extends base
+include mixins/video
+
+
+block content
+    span.user-profile-title User Info
+    div.user-info
+        div.user-name Name: #{user.name}
+        div.user-username Username: #{user.username }
+        div.user-email Email: #{user.email}
+
+        div.user-vider-list #{user.username}'s videos
+        
+        each video in user.videos
+            +video(video)
+
+    a(href=`/users/${loggedInUser._id}/edit`)#edit-user-link Edit profile &rarr; 
+
+block scripts
+    script const main=document.querySelector("main"); main.classList.remove("main-home"); main.classList.remove("main-video")

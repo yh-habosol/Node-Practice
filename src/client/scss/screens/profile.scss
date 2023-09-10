@@ -1,0 +1,52 @@
+.main-user{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.user-profile-title{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.user-info{
+    color: white;
+}
+
+
+.user-profile-title{
+    margin-bottom: 20px;
+    margin-left: 240px;
+}
+
+.user-info{
+    margin-left: 240px;
+    margin-bottom: 20px;
+}
+
+#edit-user-link:link,
+#edit-user-link:visited{
+    text-decoration: none;
+    color: white;
+}
+
+#edit-user-link{
+    margin-left: 240px;
+}
+
+.user-name{
+    margin-bottom: 10px;
+}
+.user-username{
+    margin-bottom: 10px;
+}
+
+.user-email{
+    margin-bottom: 10px;
+}
+
+#edit-user-link{
+    margin-bottom: 50px;
+}
